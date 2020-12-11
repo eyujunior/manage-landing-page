@@ -1,0 +1,68 @@
+.header {
+    @include flexbetween;
+    padding: 2rem 3rem;
+    height: 8rem;
+
+    &.light
+    {
+        background-color: #fff;
+        transition: background-color .5s ease;
+        z-index: 10000;
+        box-shadow: 0 0rem 3rem rgba(0,0,0,.2);
+    }
+
+    .nav {
+        visibility: hidden;
+        top: 50%;
+        left: 18%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.5s ease-in, left 0.5s ease-in;
+        text-align: center;
+
+        &-link
+        {
+            color: $color-dark-blue;
+        }
+    }
+    &.mobile {
+        padding: 2rem 3rem;
+        .nav {
+            visibility: visible;
+            opacity: 1;
+            background-color: #fff;
+            padding: 4rem 4rem;
+            font-size: 1.6rem;
+            position: absolute;
+            top: 50%;
+            left: 18%;
+            transform: translateY(-50%);
+            width: 65vw;
+            height: 40vh;
+            z-index: 1000;
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
+
+            #exit {
+                position: absolute;
+                top: 1rem;
+                right: 2rem;
+                cursor: pointer;
+                font-size: 3rem;
+                z-index: 1000;
+                padding: 0.5rem;
+            }
+
+            &-lists {
+                > *:not(:last-child) {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .bars {
+        fill: #000;
+        width: 2rem;
+        cursor: pointer;
+    }
+}

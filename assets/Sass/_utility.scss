@@ -1,0 +1,63 @@
+.btn
+{
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    font-family: $body-copy;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    border-radius: 5rem;
+    transition: all .3s ease;
+    
+
+    &-primary
+    {
+        background:$color-red;
+        color: #ffffff;
+        border: 1px solid $color-red;
+        margin-right: 1rem;
+        transition: background-color .5s ease-in;
+
+        // &:hover
+        // {
+        //     background: $color-gradient-reverse;
+        // }
+    }
+
+    &-transparent
+    {
+        border: 1px solid #000;
+        background-color: transparent;
+
+    }
+}
+.watermark
+{
+    width: 100%;
+    position: absolute;
+    top: -15%;
+    left: 20%;
+    z-index: -1;
+
+    &-container
+    {
+        overflow: hidden;
+    }
+}
+.heading-secondary
+{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-family: $title-font;
+    margin-bottom: 2rem;
+    color: $color-dark-blue;
+    text-align: center;
+}
+
+.sub-title
+{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    color: $color-grayish-blue;
+    text-align: center;
+}

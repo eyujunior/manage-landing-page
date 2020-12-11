@@ -1,0 +1,78 @@
+.bottom-cta {
+    background-color: $color-red;
+    padding: 3rem 3rem;
+
+    .content {
+        @include flexbetween;
+        flex-direction: column;
+
+        .heading-secondary {
+            color: #fff;
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+
+    .btn-white {
+        border: none;
+        color: $color-red;
+    }
+}
+.footer {
+    padding: 3rem 3rem;
+    background-color: $color-dark-blue;
+    color: #ffffff;
+
+    .subscribe-input {
+        padding: 1rem 2.5rem;
+        border: 1px solid #fff;
+        border-radius: 5rem;
+        width: 75%;
+    }
+
+    .item {
+        &-1 {
+            @include flexbetween;
+            margin-bottom: 3rem;
+        }
+
+        &-2 {
+            margin-bottom: 2rem;
+        }
+
+        &-3
+        {
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+
+            .social-media
+            {
+                @include flexbetween;
+                justify-content: space-evenly;
+                width: 100%;
+                margin-bottom: 3rem;
+
+                .media-icons
+                {
+                    width: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .bottom-nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+    }
+}

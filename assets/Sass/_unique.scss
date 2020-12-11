@@ -1,0 +1,63 @@
+.unique
+{
+    padding: 1rem 3rem;
+   
+
+    &-container
+    {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 2rem;
+    
+
+    .step_title
+    {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+    .step
+    {
+        width: 92%;
+        margin: 0 auto;
+
+        .sub-title
+        {
+            text-align: left;
+        }
+
+        
+    }
+    
+    
+
+    span
+    {
+        background-color: hsl(12, 88%, 59%);
+        font-size: 2rem;
+        padding: 1rem 2.5rem;
+        color: #fff;
+        border-radius: 4rem;
+        margin-right: 30%;
+       
+    }
+    
+    .sub-title:first-child, .heading-secondary
+    {
+        margin-left: -4rem;
+    }
+
+}
+.title 
+{
+    @include flexbetween;
+    justify-content: flex-start;
+    background-color: $color-pale-red;
+    margin-bottom: 1rem;
+    padding: 0;
+   
+
+   
+}
+
+
+}

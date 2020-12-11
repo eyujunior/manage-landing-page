@@ -1,0 +1,32 @@
+.hero
+{
+    margin-bottom: 6rem;
+    padding: 1rem 3rem;
+
+    .col-1
+    {
+        background: url('../images/illustration-intro.svg');
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .col-2
+    {
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    .heading-primary
+    {
+        font-family: $title-font;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        color: $color-dark-blue;
+       
+    }
+   
+}
