@@ -1,7 +1,7 @@
 .header {
     @include flexbetween;
-    padding: 2rem 3rem;
-    height: 8rem;
+    padding:2rem 3rem;
+    height: 6rem;
 
     &.light
     {
@@ -13,7 +13,7 @@
 
     .nav {
         visibility: hidden;
-        top: 50%;
+        top: 50%; 
         left: 18%;
         transform: translateY(-50%);
         opacity: 0;
